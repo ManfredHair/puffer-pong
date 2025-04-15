@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 100" width="30" height="100">
+  <!-- Coral base -->
+  <rect x="5" y="0" width="20" height="100" rx="5" fill="#ff6b35" />
+  
+  <!-- Coral texture -->
+  <path d="M5,10 Q0,15 5,20" fill="#ff914d" />
+  <path d="M5,30 Q0,35 5,40" fill="#ff914d" />
+  <path d="M5,50 Q0,55 5,60" fill="#ff914d" />
+  <path d="M5,70 Q0,75 5,80" fill="#ff914d" />
+  <path d="M5,90 Q0,95 5,100" fill="#ff914d" />
+  
+  <path d="M25,10 Q30,15 25,20" fill="#ff914d" />
+  <path d="M25,30 Q30,35 25,40" fill="#ff914d" />
+  <path d="M25,50 Q30,55 25,60" fill="#ff914d" />
+  <path d="M25,70 Q30,75 25,80" fill="#ff914d" />
+  <path d="M25,90 Q30,95 25,100" fill="#ff914d" />
+  
+  <!-- Highlights -->
+  <circle cx="15" cy="15" r="5" fill="#ffde59" opacity="0.6" />
+  <circle cx="15" cy="40" r="4" fill="#ffde59" opacity="0.6" />
+  <circle cx="15" cy="65" r="6" fill="#ffde59" opacity="0.6" />
+  <circle cx="15" cy="90" r="3" fill="#ffde59" opacity="0.6" />
+</svg> 

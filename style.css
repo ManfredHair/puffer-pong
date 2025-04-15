@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial Rounded MT Bold', 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #1a6dd5, #0a2463);
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.game-header {
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #ffde59;
+    text-shadow: 3px 3px 0 #ff914d;
+    margin-bottom: 10px;
+}
+
+.score-container {
+    font-size: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+canvas {
+    background-color: rgba(10, 50, 120, 0.7);
+    border: 4px solid #ffde59;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 222, 89, 0.5);
+}
+
+.game-controls {
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    background-color: #ff914d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+button:hover {
+    background-color: #ffde59;
+    transform: scale(1.05);
+}
+
+/* Create bubbles animation */
+.game-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, transparent 20%, #1a6dd5 70%);
+    background-size: 20px 20px;
+    animation: bubbleFloat 15s linear infinite;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+@keyframes bubbleFloat {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 500px -500px;
+    }
+} 
